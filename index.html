@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>হাফেজ ক্বারী মাওলানা সালাহুদ্দিন বিন আলফাজ | কুরআনের আলো</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="হাফেজ ক্বারী মাওলানা সালাহুদ্দিন বিন আলফাজ - লোহাজুরি কওমি মাদ্রাসা ও ফরিদাবাদ মাদ্রাসায় শিক্ষারত প্রখ্যাত হাফেজ ও ক্বারী। কুরআন তিলাওয়াত, তাজভিদ ও ইসলামি শিক্ষায় বিশেষ দক্ষতা।">
+    <meta name="keywords" content="হাফেজ সালাহুদ্দিন,ক্বারী সালাহুদ্দিন,লোহাজুরি কওমি মাদ্রাসা,ফরিদাবাদ মাদ্রাসা,হাফেজ,ক্বারী,কুরআন তিলাওয়াত">
+    <meta name="author" content="হাফেজ ক্বারী মাওলানা সালাহুদ্দিন বিন আলফাজ">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="হাফেজ ক্বারী মাওলানা সালাহুদ্দিন বিন আলফাজ">
+    <meta property="og:description" content="কুরআনের হাফেজ ও ক্বারী - লোহাজুরি ও ফরিদাবাদ মাদ্রাসার শিক্ষার্থী">
+    <meta property="og:image" content="images/profile.jpg">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.hafezsalahuddin.com">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'islamic-green': '#0B3B2A',
+                        'islamic-gold': '#D4AF37',
+                        'islamic-cream': '#FDF8F0',
+                        'islamic-brown': '#2C2418',
+                        'islamic-teal': '#1A5F4B',
+                    },
+                    fontFamily: {
+                        'bengali': ['Hind Siliguri', 'sans-serif'],
+                        'arabic': ['Noto Naskh Arabic', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Lightbox for Gallery -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        /* Islamic Pattern Background */
+        .islamic-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' opacity='0.04'%3E%3Cpath fill='none' stroke='%238B7355' stroke-width='0.8' d='M20 20 L80 20 M20 40 L80 40 M20 60 L80 60 M20 80 L80 80 M20 20 L20 80 M40 20 L40 80 M60 20 L60 80 M80 20 L80 80 M50 10 L90 50 L50 90 L10 50 Z'/%3E%3Ccircle cx='50' cy='50' r='18' fill='none' stroke='%238B7355' stroke-width='0.8'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #FDF8F0; }
+        ::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #0B3B2A; }
+        
+        /* Gallery Image Hover Effect */
+        .gallery-img {
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+        .gallery-img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+        
+        /* Custom Video Container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Form Focus */
+        input:focus, textarea:focus {
+            ring: 2px solid #D4AF37;
+            ring-offset: 2px;
+        }
+        
+        /* Profile Image Circle */
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #D4AF37;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        /* Islamic Border Decoration */
+        .islamic-border {
+            background: linear-gradient(135deg, #D4AF37, #0B3B2A, #D4AF37);
+            height: 3px;
+            width: 100px;
+            margin: 20px auto;
+        }
+        
+        /* Responsive Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        
+        @media (max-width: 640px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 15px;
+            }
+        }
+        
+        /* Loading Animation */
+        .loader {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #FDF8F0;
+            border-top: 4px solid #D4AF37;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Floating Animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-bengali bg-islamic-cream text-islamic-brown relative">
+    
+    <div class="islamic-bg"></div>
+    
+    <!-- Header with Profile Image -->
+    <header class="relative z-10 bg-gradient-to-br from-islamic-green via-green-900 to-islamic-green text-white pt-16 pb-20 border-b-4 border-islamic-gold">
+        <div class="container mx-auto px-4 text-center">
+            <!-- Profile Image -->
+            <div class="mb-6" data-aos="zoom-in">
+                <img src="images/profile.jpg" alt="হাফেজ ক্বারী সালাহুদ্দিন বিন আলফাজ" class="profile-img mx-auto shadow-2xl float-animation"
+                     onerror="this.onerror=null; this.src='https://via.placeholder.com/180x180/0B3B2A/D4AF37?text=হাফেজ+সালাহুদ্দিন'">
+            </div>
+            
+            <div class="font-arabic text-2xl text-islamic-gold mb-3" data-aos="fade-up">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+            <h1 class="text-3xl md:text-5xl font-bold mb-3" data-aos="fade-up" data-aos-delay="100">হাফেজ ক্বারী মাওলানা সালাহুদ্দিন বিন আলফাজ</h1>
+            <p class="text-lg md:text-xl text-islamic-cream/90 mb-6" data-aos="fade-up" data-aos-delay="200">হাফেজুল কুরআন | ক্বারী | তাজভিদ বিশেষজ্ঞ</p>
+            
+            <div class="islamic-border"></div>
+            
+            <div class="flex flex-wrap justify-center gap-3 mt-6" data-aos="fade-up" data-aos-delay="300">
+                <span class="bg-islamic-gold/20 backdrop-blur-sm px-5 py-2 rounded-full text-sm font-semibold border border-islamic-gold/40">
+                    <i class="fas fa-mosque ml-2"></i> লোহাজুরি কওমি মাদ্রাসা
+                </span>
+                <span class="bg-islamic-gold/20 backdrop-blur-sm px-5 py-2 rounded-full text-sm font-semibold border border-islamic-gold/40">
+                    <i class="fas fa-book ml-2"></i> ফরিদাবাদ মাদ্রাসা
+                </span>
+                <span class="bg-islamic-gold/20 backdrop-blur-sm px-5 py-2 rounded-full text-sm font-semibold border border-islamic-gold/40">
+                    <i class="fas fa-voice ml-2"></i> কুরআন তিলাওয়াত
+                </span>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-20 bg-white/95 backdrop-blur-md shadow-lg border-b border-islamic-gold/20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center md:justify-between items-center py-4">
+                <div class="hidden md:block text-islamic-green font-bold text-lg">
+                    <i class="fas fa-quran text-islamic-gold"></i> হাফেজ সালাহুদ্দিন
+                </div>
+                <div class="flex flex-wrap justify-center gap-3 md:gap-6">
+                    <a href="#home" class="nav-link text-islamic-green hover:text-islamic-gold transition font-semibold flex items-center gap-1 text-sm md:text-base">
+                        <i class="fas fa-home"></i> <span>প্রারম্ভ</span>
+                    </a>
+                    <a href="#about" class="nav-link text-islamic-green hover:text-islamic-gold transition font-semibold flex items-center gap-1 text-sm md:text-base">
+                        <i class="fas fa-user"></i> <span>পরিচিতি</span>
+                    </a>
+                    <a href="#education" class="nav-link text-islamic-green hover:text-islamic-gold transition font-semibold flex items-center gap-1 text-sm md:text-base">
+                        <i class="fas fa-graduation-cap"></i> <span>শিক্ষা</span>
+                    </a>
+                    <a href="#gallery" class="nav-link text-islamic-green hover:text-islamic-gold transition font-semibold flex items-center gap-1 text-sm md:text-base">
+                        <i class="fas fa-images"></i> <span>গ্যালারি</span>
+                    </a>
+                    <a href="#tilawat" class="nav-link text-islamic-green hover:text-islamic-gold transition font-semibold flex items-center gap-1 text-sm md:text-base">
+                        <i class="fas fa-headphones"></i> <span>তিলাওয়াত</span>
+                    </a>
+                    <a href="#contact" class="nav-link text-islamic-green hover:text-islamic-gold transition font-semibold flex items-center gap-1 text-sm md:text-base">
+                        <i class="fas fa-envelope"></i> <span>যোগাযোগ</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="relative z-10">
+        <!-- Home Section -->
+        <section id="home" class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-10 border border-islamic-gold/20 hover:shadow-3xl transition-all duration-500" data-aos="fade-up">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i class="fas fa-hand-peace text-3xl text-islamic-gold"></i>
+                        <h2 class="text-2xl md:text-3xl font-bold text-islamic-green">আসসালামু আলাইকুম ওয়া রহমাতুল্লাহি ওয়াবারকাতুহু</h2>
+                    </div>
+                    <p class="text-base md:text-lg leading-relaxed mb-4">আলহামদুলিল্লাহ, আমি <strong class="text-islamic-gold">হাফেজ ক্বারী মাওলানা সালাহুদ্দিন বিন আলফাজ</strong>। পবিত্র কুরআনের হাফেজ ও ক্বারী হিসেবে আল্লাহর কালামের খেদমত করাই আমার জীবনের একমাত্র লক্ষ্য ও উদ্দেশ্য।</p>
+                    <p class="text-base md:text-lg leading-relaxed mb-4">ছোটবেলা থেকেই কুরআন শিক্ষার প্রতি আমার গভীর আগ্রহ ছিল। কঠোর অধ্যবসায় ও শিক্ষকবৃন্দের দোয়ায় আমি পবিত্র কুরআন মুখস্থ করি এবং উচ্চ স্তরের তাজভিদ ও কিরাতের জ্ঞান অর্জন করি। বর্তমানে <strong class="text-islamic-gold">লোহাজুরি কওমি মাদ্রাসা</strong> ও <strong class="text-islamic-gold">ফরিদাবাদ মাদ্রাসায়</strong> ইসলামি জ্ঞানের উচ্চতর শিক্ষাগ্রহণ করছি।</p>
+                    <div class="bg-gradient-to-r from-islamic-green/5 to-islamic-gold/5 p-4 rounded-xl mt-4">
+                        <p class="text-base md:text-lg leading-relaxed font-semibold text-islamic-green"><i class="fas fa-star-of-life text-islamic-gold"></i> আমার কাছে কুরআন শিক্ষা, তিলাওয়াত ও তাজভিদ সংশোধনের জন্য যে কেউ যোগাযোগ করতে পারেন। ইনশাআল্লাহ সর্বাত্মক সহযোগিতা করা হবে।</p>
+                    </div>
+                    <div class="mt-6">
+                        <a href="https://www.facebook.com/hafajsalahuddin" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            <i class="fab fa-facebook-f"></i> ফেসবুকে ভিজিট করুন
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="py-16 md:py-24 bg-gradient-to-b from-islamic-cream to-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <i class="fas fa-user-circle text-5xl text-islamic-gold mb-3"></i>
+                    <h2 class="text-3xl md:text-4xl font-bold text-islamic-green">পরিচিতি ও জীবনী</h2>
+                    <div class="islamic-border"></div>
+                </div>
+                <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-10 max-w-4xl mx-auto border border-islamic-gold/20" data-aos="fade-up" data-aos-delay="100">
+                    <p class="text-base md:text-lg leading-relaxed mb-4"><strong class="text-islamic-gold text-xl">হাফেজ ক্বারী মাওলানা সালাহুদ্দিন বিন আলফাজ</strong> একজন উদীয়মান হাফেজ ও ক্বারী। তিনি কুরআনুল কারিমের হিফজ সম্পন্ন করেছেন এবং বর্তমানে কিরাত ও তাজভিদের উচ্চতর শিক্ষাগ্রহণ করছেন।</p>
+                    <p class="text-base md:text-lg leading-relaxed mb-4">তার তিলাওয়াতের বিশেষত্ব হলো কুরআনের মর্মবাণী শ্রোতার হৃদয়ে পৌঁছে দেওয়ার অনন্য ক্ষমতা। নিয়মিত মসজিদ ও ইসলামি মাহফিলে কুরআন তিলাওয়াত করেন এবং তাজভিদের উপর শিক্ষাদান করে থাকেন।</p>
+                    <p class="text-base md:text-lg leading-relaxed">তিনি বিশ্বাস করেন, কুরআন শুধু পড়ার জন্য নয়, বরং বুঝে পড়ার এবং জীবনে বাস্তবায়নের জন্য। উনার শিক্ষকবৃন্দ ও অভিভাবকদের দোয়ায় তিনি কুরআনের খেদমতে আত্মনিয়োগ করেছেন।</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Education Section -->
+        <section id="education" class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <i class="fas fa-graduation-cap text-5xl text-islamic-gold mb-3"></i>
+                    <h2 class="text-3xl md:text-4xl font-bold text-islamic-green">শিক্ষাজীবন ও প্রতিষ্ঠান</h2>
+                    <div class="islamic-border"></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Madrasa 1 -->
+                    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden transition-all duration-500 hover:transform hover:scale-105 border border-islamic-gold/20" data-aos="fade-right">
+                        <div class="bg-gradient-to-br from-islamic-green to-green-800 p-8 text-center">
+                            <i class="fas fa-mosque text-6xl text-islamic-gold mb-3"></i>
+                            <h3 class="text-2xl font-bold text-white">লোহাজুরি কওমি মাদ্রাসা</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="mb-4 leading-relaxed">লোহাজুরি কওমি মাদ্রাসা একটি ঐতিহ্যবাহী ইসলামি শিক্ষাপ্রতিষ্ঠান। এখানে তিনি পবিত্র কুরআনের হিফজ (মুখস্থ) ও প্রাথমিক তাজভিদ শিক্ষা সম্পন্ন করেন।</p>
+                            <div class="bg-islamic-cream rounded-xl p-4 mb-4">
+                                <p class="flex items-center gap-2 mb-2"><i class="fas fa-check-circle text-islamic-gold"></i> <strong>অধ্যয়নকাল:</strong> হিফজুল কুরআন (পূর্ণ)</p>
+                                <p class="flex items-center gap-2 mb-2"><i class="fas fa-check-circle text-islamic-gold"></i> <strong>অর্জন:</strong> পবিত্র কুরআন মুখস্থ, নুরানি ও প্রাথমিক তাজভিদ</p>
+                                <p class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-islamic-gold"></i> <strong>অবস্থান:</strong> লোহাজুরি, বাংলাদেশ</p>
+                            </div>
+                            <p class="text-sm text-islamic-brown/70 italic">"লোহাজুরি কওমি মাদ্রাসার কঠোর নিয়ম-কানুন ও শিক্ষকদের আন্তরিক প্রচেষ্টার কারণে তিনি অতি দ্রুত হিফজ সম্পন্ন করতে সক্ষম হন।"</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Madrasa 2 -->
+                    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden transition-all duration-500 hover:transform hover:scale-105 border border-islamic-gold/20" data-aos="fade-left">
+                        <div class="bg-gradient-to-br from-islamic-green to-green-800 p-8 text-center">
+                            <i class="fas fa-book-quran text-6xl text-islamic-gold mb-3"></i>
+                            <h3 class="text-2xl font-bold text-white">ফরিদাবাদ মাদ্রাসা</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="mb-4 leading-relaxed">ফরিদাবাদ মাদ্রাসা বাংলাদেশের একটি প্রসিদ্ধ কওমি শিক্ষাপ্রতিষ্ঠান। বর্তমানে তিনি এখানে কিরাত, তাজভিদ ও দাওরায়ে হাদিস (মাস্টার্স) পর্যায়ের শিক্ষাগ্রহণ করছেন।</p>
+                            <div class="bg-islamic-cream rounded-xl p-4 mb-4">
+                                <p class="flex items-center gap-2 mb-2"><i class="fas fa-check-circle text-islamic-gold"></i> <strong>অধ্যয়নরত:</strong> দাওরায়ে হাদিস, কিরাত ও তাজভিদ</p>
+                                <p class="flex items-center gap-2 mb-2"><i class="fas fa-check-circle text-islamic-gold"></i> <strong>বিষয়সমূহ:</strong> তাফসির, হাদিস, ফিকহ, আরবি সাহিত্য</p>
+                                <p class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-islamic-gold"></i> <strong>অবস্থান:</strong> ফরিদাবাদ, বাংলাদেশ</p>
+                            </div>
+                            <p class="text-sm text-islamic-brown/70 italic">"ফরিদাবাদ মাদ্রাসায় তার শিক্ষাজীবনের সর্বোচ্চ ধাপ চলমান রয়েছে। এখান থেকে তিনি কুরআন ও সুন্নাহর গভীর জ্ঞান অর্জন করছেন।"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-16 md:py-24 bg-gradient-to-b from-white to-islamic-cream">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <i class="fas fa-images text-5xl text-islamic-gold mb-3"></i>
+                    <h2 class="text-3xl md:text-4xl font-bold text-islamic-green">ছবি গ্যালারি</h2>
+                    <div class="islamic-border"></div>
+                    <p class="text-islamic-brown/70 mt-3">তিলাওয়াত, মাহফিল ও শিক্ষাজীবনের স্মৃতিচারণ</p>
+                </div>
+                <div class="gallery-grid" data-aos="fade-up">
+                    <a href="images/img1.jpg" data-lightbox="gallery" data-title="কুরআন তিলাওয়াত মাহফিল - ১">
+                        <img src="images/img1.jpg" alt="তিলাওয়াত মাহফিল" class="gallery-img w-full h-64 object-cover rounded-2xl shadow-lg border-2 border-islamic-gold/30"
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/400x400/0B3B2A/D4AF37?text=ছবি+১'">
+                    </a>
+                    <a href="images/img2.jpg" data-lightbox="gallery" data-title="কুরআন তিলাওয়াত মাহফিল - ২">
+                        <img src="images/img2.jpg" alt="তিলাওয়াত মাহফিল" class="gallery-img w-full h-64 object-cover rounded-2xl shadow-lg border-2 border-islamic-gold/30"
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/400x400/0B3B2A/D4AF37?text=ছবি+২'">
+                    </a>
+                    <a href="images/img3.jpg" data-lightbox="gallery" data-title="মাদ্রাসার শিক্ষার্থীদের সাথে">
+                        <img src="images/img3.jpg" alt="মাদ্রাসার শিক্ষার্থী" class="gallery-img w-full h-64 object-cover rounded-2xl shadow-lg border-2 border-islamic-gold/30"
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/400x400/0B3B2A/D4AF37?text=ছবি+৩'">
+                    </a>
+                    <a href="images/img4.jpg" data-lightbox="gallery" data-title="ইসলামি সেমিনার">
+                        <img src="images/img4.jpg" alt="ইসলামি সেমিনার" class="gallery-img w-full h-64 object-cover rounded-2xl shadow-lg border-2 border-islamic-gold/30"
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/400x400/0B3B2A/D4AF37?text=ছবি+৪'">
+                    </a>
+                    <a href="images/img5.jpg" data-lightbox="gallery" data-title="মসজিদে তিলাওয়াত">
+                        <img src="images/img5.jpg" alt="মসজিদে তিলাওয়াত" class="gallery-img w-full h-64 object-cover rounded-2xl shadow-lg border-2 border-islamic-gold/30"
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/400x400/0B3B2A/D4AF37?text=ছবি+৫'">
+                    </a>
+                    <a href="images/img6.jpg" data-lightbox="gallery" data-title="কুরআন শিক্ষা অনুষ্ঠান">
+                        <img src="images/img6.jpg" alt="কুরআন শিক্ষা" class="gallery-img w-full h-64 object-cover rounded-2xl shadow-lg border-2 border-islamic-gold/30"
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/400x400/0B3B2A/D4AF37?text=ছবি+৬'">
+                    </a>
+                </div>
+                <div class="text-center mt-8 text-islamic-brown/60 text-sm">
+                    <i class="fas fa-info-circle"></i> ছবিতে ক্লিক করে বড় করে দেখুন
+                </div>
+            </div>
+        </section>
+        
+        <!-- Tilawat Section -->
+        <section id="tilawat" class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <i class="fas fa-headphones text-5xl text-islamic-gold mb-3"></i>
+                    <h2 class="text-3xl md:text-4xl font-bold text-islamic-green">কুরআন তিলাওয়াত</h2>
+                    <div class="islamic-border"></div>
+                    <p class="text-islamic-brown/70 mt-3">হৃদয়স্পর্শী কুরআনের বাণী শুনুন</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-islamic-gold/20" data-aos="zoom-in">
+                        <div class="video-container">
+                            <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/850585797442985&show_text=0&mute=0&autoplay=0" 
+                                    allow="encrypted-media" 
+                                    allowfullscreen
+                                    loading="lazy"></iframe>
+                        </div>
+                        <div class="p-4 text-center font-semibold text-islamic-green bg-gradient-to-r from-islamic-cream to-white">
+                            <i class="fas fa-microphone-alt text-islamic-gold mr-2"></i> সূরা তিলাওয়াত - পবিত্র কুরআনের আয়াতসমূহ
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-islamic-gold/20" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="video-container">
+                            <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/1784197665633705&show_text=0&mute=0&autoplay=0" 
+                                    allow="encrypted-media" 
+                                    allowfullscreen
+                                    loading="lazy"></iframe>
+                        </div>
+                        <div class="p-4 text-center font-semibold text-islamic-green bg-gradient-to-r from-islamic-cream to-white">
+                            <i class="fas fa-heart text-islamic-gold mr-2"></i> হৃদয়স্পর্শী তিলাওয়াত - কুরআনের অমিয় বাণী
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-10" data-aos="fade-up">
+                    <a href="https://www.facebook.com/hafajsalahuddin" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-islamic-green to-green-700 hover:from-islamic-gold hover:to-islamic-green text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        <i class="fab fa-facebook-f"></i> ফেসবুকে আরও তিলাওয়াত দেখুন
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-gradient-to-b from-islamic-cream to-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <i class="fas fa-envelope text-5xl text-islamic-gold mb-3"></i>
+                    <h2 class="text-3xl md:text-4xl font-bold text-islamic-green">যোগাযোগ করুন</h2>
+                    <div class="islamic-border"></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-8 border border-islamic-gold/20" data-aos="fade-right">
+                        <form id="contactForm" class="space-y-5">
+                            <div>
+                                <label class="block text-islamic-green font-semibold mb-2"><i class="fas fa-user mr-2 text-islamic-gold"></i>আপনার নাম</label>
+                                <input type="text" id="name" required class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-islamic-gold focus:ring-2 focus:ring-islamic-gold/20 outline-none transition">
+                            </div>
+                            <div>
+                                <label class="block text-islamic-green font-semibold mb-2"><i class="fas fa-envelope mr-2 text-islamic-gold"></i>ইমেইল ঠিকানা</label>
+                                <input type="email" id="email" required class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-islamic-gold focus:ring-2 focus:ring-islamic-gold/20 outline-none transition">
+                            </div>
+                            <div>
+                                <label class="block text-islamic-green font-semibold mb-2"><i class="fas fa-comment mr-2 text-islamic-gold"></i>আপনার বার্তা</label>
+                                <textarea id="message" rows="5" required placeholder="কুরআন শিক্ষা, তিলাওয়াত, তাজভিদ সংশোধন অথবা যেকোনো ইসলামি প্রশ্ন..." class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-islamic-gold focus:ring-2 focus:ring-islamic-gold/20 outline-none transition"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-islamic-green to-green-700 hover:from-islamic-gold hover:to-islamic-green text-white font-semibold py-3 rounded-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg">
+                                <i class="fas fa-paper-plane"></i> বার্তা প্রেরণ করুন
+                            </button>
+                        </form>
+                        <div id="formMessage" class="mt-4 text-center hidden"></div>
+                    </div>
+                    
+                    <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-8 border border-islamic-gold/20" data-aos="fade-left">
+                        <div class="space-y-5">
+                            <div class="flex items-center gap-3 p-4 bg-gradient-to-r from-islamic-cream to-white rounded-xl border border-islamic-gold/20">
+                                <i class="fab fa-facebook-f text-3xl text-blue-600"></i>
+                                <div><strong class="text-islamic-green text-lg">ফেসবুক পেইজ</strong><br>হাফেজ সালাহুদ্দিন</div>
+                            </div>
+                            <div class="flex items-center gap-3 p-4 bg-gradient-to-r from-islamic-cream to-white rounded-xl border border-islamic-gold/20">
+                                <i class="fas fa-mosque text-3xl text-islamic-gold"></i>
+                                <div><strong class="text-islamic-green text-lg">অধ্যয়নরত</strong><br>লোহাজুরি কওমি মাদ্রাসা ও ফরিদাবাদ মাদ্রাসা</div>
+                            </div>
+                            <div class="flex items-center gap-3 p-4 bg-gradient-to-r from-islamic-cream to-white rounded-xl border border-islamic-gold/20">
+                                <i class="fas fa-clock text-3xl text-islamic-gold"></i>
+                                <div><strong class="text-islamic-green text-lg">লাইভ সময়</strong><br><span id="liveClock" class="font-mono">--:--:--</span></div>
+                            </div>
+                            <div class="mt-6 p-5 bg-gradient-to-r from-islamic-green to-green-800 rounded-xl text-white text-center">
+                                <p class="text-sm leading-relaxed">কুরআন শিক্ষা, তিলাওয়াত সংশোধন অথবা তাজভিদ সংক্রান্ত যেকোনো প্রয়োজনেই সরাসরি ফেসবুকে মেসেজ করতে পারেন।</p>
+                                <a href="https://www.facebook.com/hafajsalahuddin" target="_blank" class="inline-flex items-center gap-2 mt-3 bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full text-sm font-semibold transition shadow-lg">
+                                    <i class="fab fa-facebook-messenger"></i> মেসেঞ্জারে বার্তা দিন
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="relative z-10 bg-gradient-to-br from-islamic-green to-green-900 text-islamic-cream py-12 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <div class="font-arabic text-2xl text-islamic-gold mb-4">رَبِّ زِدْنِي عِلْمًا</div>
+            <p class="font-semibold text-xl mb-2">হাফেজ ক্বারী মাওলানা সালাহুদ্দিন বিন আলফাজ</p>
+            <p class="mb-4">লোহাজুরি কওমি মাদ্রাসা | ফরিদাবাদ মাদ্রাসা</p>
+            <div class="islamic-border opacity-50"></div>
+            <p class="text-sm opacity-75 mt-4">কুরআনের আলো ছড়িয়ে দিন | ইসলামি সংস্কৃতির প্রতি শ্রদ্ধা জানিয়ে</p>
+            <p class="text-xs opacity-60 mt-4">© ২০২৬ সকল অধিকার সংরক্ষিত</p>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({ duration: 800, once: true, offset: 100 });
+        
+        // Live Clock
+        function updateClock() {
+            const now = new Date();
+            const bangladeshTime = new Date(now.toLocaleString("en-US", {timeZone: "Asia/Dhaka"}));
+            const timeString = bangladeshTime.toLocaleTimeString('bn-BD', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+            const clockElement = document.getElementById('liveClock');
+            if (clockElement) clockElement.textContent = timeString;
+        }
+        updateClock();
+        setInterval(updateClock, 1000);
+        
+        // Smooth Scroll
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const offset = 70;
+                    window.scrollTo({ top: targetElement.offsetTop - offset, behavior: 'smooth' });
+                }
+            });
+        });
+        
+        // Form Handler with LocalStorage
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+        
+        ['name', 'email', 'message'].forEach(field => {
+            const el = document.getElementById(field);
+            if (el) {
+                const saved = localStorage.getItem(`contact_${field}`);
+                if (saved) el.value = saved;
+                el.addEventListener('input', (e) => localStorage.setItem(`contact_${field}`, e.target.value));
+            }
+        });
+        
+        contactForm?.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            if (!name || !email || !message) {
+                showMessage('সব ঘর পূরণ করুন', 'error');
+                return;
+            }
+            if (!email.includes('@') || !email.includes('.')) {
+                showMessage('সঠিক ইমেইল দিন', 'error');
+                return;
+            }
+            
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<div class="loader"></div> পাঠানো হচ্ছে...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                ['name', 'email', 'message'].forEach(f => localStorage.removeItem(`contact_${f}`));
+                contactForm.reset();
+                showMessage('জাযাকাল্লাহু খাইরান! আপনার বার্তা প্রেরণ করা হয়েছে।', 'success');
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 1500);
+        });
+        
+        function showMessage(msg, type) {
+            formMessage.textContent = msg;
+            formMessage.className = `mt-4 text-center p-3 rounded-xl ${type === 'success' ? 'bg-green-100 text-green-700 border border-green-300' : 'bg-red-100 text-red-700 border border-red-300'}`;
+            formMessage.classList.remove('hidden');
+            setTimeout(() => formMessage.classList.add('hidden'), 5000);
+        }
+        
+        // Scroll Spy
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const scrollPosition = window.scrollY + 100;
+            sections.forEach(section => {
+                if (scrollPosition >= section.offsetTop && scrollPosition < section.offsetTop + section.offsetHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('text-islamic-gold');
+                link.classList.add('text-islamic-green');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('text-islamic-green');
+                    link.classList.add('text-islamic-gold');
+                }
+            });
+        });
+        
+        console.log('ওয়েবসাইট লোড সম্পূর্ণ | হাফেজ ক্বারী সালাহুদ্দিন বিন আলফাজ');
+    </script>
+</body>
+</html>
